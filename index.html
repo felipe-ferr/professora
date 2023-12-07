@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Professora</title>
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <div class="content">
+            <h1>Melhor Professora</h1>
+
+            <p>Motivos:</p>
+            <ul>
+                <li>- Uma ótima professora</li>
+                <li>- Gente boa</li>
+                <li>- Amigável</li>
+                <li>- Conselheira</li>
+            </ul>
+
+            <button onclick="mostrarFrases()">Ler frases</button>
+        </div>
+
+        <div id="frases">
+            <p id="frase1"></p>
+            <p id="frase2"></p>
+            <p id="frase3"></p>
+            <p id="frase4"></p>
+            <p id="frase5"></p>
+            <p id="frase6"></p>
+            <p id="frase7"></p>
+            <p id="frase8"></p>
+        </div>
+
+    </div>
+
+    <script>
+        function mostrarFrases(){
+            document.getElementById("frase1").innerHTML = "Você me permitiu sonhar - Weldon"
+            document.getElementById("frase2").innerHTML = "Você me mostrou um mundo novo e novos horizontes - Adônes"
+            document.getElementById("frase3").innerHTML = "Muitas das minhas conquistas também pertencem a você que me ensinou e me ajudou a ser quem eu sou hoje, que me orientara e me guia. Sou grato a você por me ensinar tanto! - Carlos"
+            document.getElementById("frase4").innerHTML = "Queria te mandar um mega obrigado pelas aulas de programação! Sério, aprendi um monte contigo. Suas explicações são top!<br>Só queria pedir desculpas se não bati todas as expectativas. Tô ciente de que ainda preciso pegar mais firme em algumas coisas, mas prometo que tô na vibe de melhorar.<br>Valeu demais pela paciência e pela vibe positiva nas aulas. Tô na correria pra evoluir mais, e agradeço pela chance de aprender com alguém tão fera como você. - Pablo"
+            document.getElementById("frase5").innerHTML = "Ter cargo de professor qualquer um pode ter, mas ser professor em essência e de forma genuína é pra poucos. E você exerce essa profissão com extrema excelência! - Suelen"
+            document.getElementById("frase6").innerHTML = "Graças as suas aulas eu consegui escolher a área que eu quero seguir, muito obrigado! - Felipe"
+            document.getElementById("frase7").innerHTML = "Professora,você é uma pessoa incrível!Gostaria de agradecer por todo carinho,paciência e feedback positivo com a nossa turma. Admiração, carinho e respeito é o que define meu sentimento a vc!Obrigado por tudo. Um forte abraço, boas festas! - Renner"
+            
+            document.getElementById("frase8").innerHTML = "Em nome de todos os alunos do 3B, muito obrigada professora Héryka! - Por Marcelle"
+
+            
+
+            document.getElementById("frases").classList.add("fade-in")
+            document.getElementById("frases").style.display = "flex"
+        }
+
+    </script>
+</body>
+</html>

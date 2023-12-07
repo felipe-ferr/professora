@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0C0B55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%230C0B55' cx='50' cy='0' r='50'/%3E%3Cg fill='%23001964' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23002572' cx='50' cy='100' r='50'/%3E%3Cg fill='%23003180' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23003d8c' cx='50' cy='200' r='50'/%3E%3Cg fill='%23004898' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%230054a2' cx='50' cy='300' r='50'/%3E%3Cg fill='%23005fac' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23006bb4' cx='50' cy='400' r='50'/%3E%3Cg fill='%230077bb' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%230082c0' cx='50' cy='500' r='50'/%3E%3Cg fill='%23008ec5' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23009ac8' cx='50' cy='600' r='50'/%3E%3Cg fill='%2300a5c9' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300b1ca' cx='50' cy='700' r='50'/%3E%3Cg fill='%2300bdca' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300c8c9' cx='50' cy='800' r='50'/%3E%3Cg fill='%2300d3c7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300dec5' cx='50' cy='900' r='50'/%3E%3Cg fill='%2300e9c2' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2303F4BF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 70rem;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  background-color: white;
+  width: 20rem;
+  height: 30rem;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+  -webkit-box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+  -moz-box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+}
+
+.content p {
+  font-size: 17pt;
+}
+
+.content ul {
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.content li {
+  margin-left: 2rem;
+}
+
+.content button {
+  margin-top: 4rem;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: .5rem;
+  border: 2px solid #4ee7ef;
+  color: #4ee7ef;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.8s;
+
+}
+
+.content button:hover {
+  box-shadow: inset 110px 0px 0px 0px #4ee7ef;
+  color: white;
+}
+
+#frases {
+  width: 40rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+
+}
+
+#frases p {
+  background-color: #4ee7ef;
+  box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+  -webkit-box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+  -moz-box-shadow: 9px 10px 5px -1px rgba(25, 25, 25, 0.75);
+  box-sizing: border-box;
+  padding: 2vh;
+  border-radius: 10px;
+
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
